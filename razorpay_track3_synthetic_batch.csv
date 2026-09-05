@@ -1,0 +1,101 @@
+customer_id,customer_name,amount_due,days_overdue,failure_reason,payment_channel,outreach_count,last_interaction_date,historical_context,is_recovered
+CUST_RAZOR_1001,Amit Gupta,2825.47,5,insufficient_funds,subscription_auto_debit,2,2026-09-03,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1002,Priya Singh,134384.36,16,b2b_invoice_overdue,b2b_receivables,0,2026-09-01,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1003,Arjun Singh,751.09,7,user_dropped_at_otp,checkout_abandonment,2,2026-08-27,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1004,Ananya Reddy,6097.02,1,network_timeout_at_gateway,payment_gateway_degradation,0,2026-08-29,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1005,Rohan Patel,2544.48,11,expired_card,subscription_auto_debit,0,2026-09-03,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1006,Priya Joshi,8550.2,20,network_timeout_at_gateway,payment_gateway_degradation,1,2026-09-04,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1007,Arjun Verma,9743.6,13,network_timeout_at_gateway,payment_gateway_degradation,0,2026-08-27,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1008,Kriti Joshi,5983.85,3,expired_card,subscription_auto_debit,0,2026-09-01,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1009,Priya Nair,8730.59,13,expired_card,subscription_auto_debit,1,2026-08-28,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1010,Rahul Joshi,3874.07,9,expired_card,subscription_auto_debit,2,2026-09-03,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1011,Rahul Mehta,195825.36,25,b2b_invoice_overdue,b2b_receivables,3,2026-08-29,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1012,Arjun Nair,7002.84,2,expired_card,subscription_auto_debit,0,2026-09-04,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1013,Vikram Gupta,1127.79,19,expired_card,subscription_auto_debit,2,2026-08-30,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1014,Neha Das,8903.49,15,user_dropped_at_otp,checkout_abandonment,0,2026-08-31,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1015,Ananya Mehta,5619.28,19,user_dropped_at_otp,checkout_abandonment,1,2026-08-26,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1016,Sneha Nair,9973.59,5,network_timeout_at_gateway,payment_gateway_degradation,2,2026-08-28,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1017,Amit Verma,1950.99,6,insufficient_funds,subscription_auto_debit,2,2026-08-29,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1018,Priya Das,126323.86,44,b2b_invoice_overdue,b2b_receivables,2,2026-08-27,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1019,Priya Mehta,7632.34,11,insufficient_funds,subscription_auto_debit,0,2026-08-31,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1020,Rahul Reddy,529.83,9,network_timeout_at_gateway,payment_gateway_degradation,2,2026-09-02,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1021,Priya Gupta,218333.87,47,b2b_invoice_overdue,b2b_receivables,1,2026-09-02,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1022,Rahul Mehta,9557.25,17,expired_card,subscription_auto_debit,0,2026-08-26,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1023,Neha Sharma,1561.74,12,expired_card,subscription_auto_debit,1,2026-09-01,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1024,Ananya Singh,9495.02,3,insufficient_funds,subscription_auto_debit,2,2026-08-28,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1025,Arjun Patel,1718.72,16,insufficient_funds,subscription_auto_debit,2,2026-09-02,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1026,Arjun Singh,4518.81,7,expired_card,subscription_auto_debit,2,2026-09-01,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1027,Vikram Joshi,4660.95,17,expired_card,subscription_auto_debit,1,2026-09-03,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1028,Ananya Verma,3710.81,19,user_dropped_at_otp,checkout_abandonment,2,2026-09-01,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1029,Ananya Sharma,64198.62,55,b2b_invoice_overdue,b2b_receivables,0,2026-09-01,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1030,Amit Joshi,1172.14,8,insufficient_funds,subscription_auto_debit,1,2026-08-28,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1031,Arjun Patel,7370.85,19,user_dropped_at_otp,checkout_abandonment,2,2026-08-28,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1032,Neha Das,2307.89,4,user_dropped_at_otp,checkout_abandonment,2,2026-08-29,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1033,Vikram Das,4935.73,2,expired_card,subscription_auto_debit,2,2026-09-03,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1034,Vikram Joshi,8104.63,4,insufficient_funds,subscription_auto_debit,0,2026-09-01,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1035,Arjun Reddy,1830.73,6,user_dropped_at_otp,checkout_abandonment,1,2026-08-28,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1036,Priya Reddy,8175.21,18,user_dropped_at_otp,checkout_abandonment,0,2026-09-04,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1037,Amit Verma,235273.4,69,b2b_invoice_overdue,b2b_receivables,1,2026-09-02,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1038,Neha Reddy,2529.6,13,network_timeout_at_gateway,payment_gateway_degradation,0,2026-09-02,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1039,Amit Das,3018.43,15,network_timeout_at_gateway,payment_gateway_degradation,1,2026-08-29,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1040,Neha Patel,87979.57,28,b2b_invoice_overdue,b2b_receivables,0,2026-08-26,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1041,Amit Joshi,61433.05,52,b2b_invoice_overdue,b2b_receivables,3,2026-08-27,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1042,Rahul Sharma,242155.78,20,b2b_invoice_overdue,b2b_receivables,1,2026-09-03,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1043,Priya Nair,130755.11,75,b2b_invoice_overdue,b2b_receivables,1,2026-08-26,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1044,Amit Singh,66396.68,57,b2b_invoice_overdue,b2b_receivables,2,2026-08-31,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1045,Sneha Nair,3022.34,5,user_dropped_at_otp,checkout_abandonment,2,2026-08-31,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1046,Sneha Verma,587.5,20,network_timeout_at_gateway,payment_gateway_degradation,2,2026-09-03,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1047,Arjun Nair,5304.9,5,insufficient_funds,subscription_auto_debit,1,2026-09-03,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1048,Sneha Gupta,1997.59,18,user_dropped_at_otp,checkout_abandonment,2,2026-08-31,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1049,Arjun Sharma,183572.64,50,b2b_invoice_overdue,b2b_receivables,2,2026-09-03,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1050,Rohan Verma,8951.27,18,user_dropped_at_otp,checkout_abandonment,0,2026-08-31,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1051,Kriti Nair,7316.32,7,expired_card,subscription_auto_debit,2,2026-08-31,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1052,Neha Gupta,231067.3,69,b2b_invoice_overdue,b2b_receivables,0,2026-09-03,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1053,Rohan Sharma,532.68,5,network_timeout_at_gateway,payment_gateway_degradation,2,2026-08-31,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1054,Neha Mehta,7202.84,18,user_dropped_at_otp,checkout_abandonment,0,2026-09-03,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1055,Rahul Mehta,841.27,12,insufficient_funds,subscription_auto_debit,2,2026-08-27,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1056,Vikram Patel,896.37,12,user_dropped_at_otp,checkout_abandonment,0,2026-08-30,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1057,Ananya Verma,3858.95,18,user_dropped_at_otp,checkout_abandonment,1,2026-08-26,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1058,Ananya Patel,9772.96,6,user_dropped_at_otp,checkout_abandonment,1,2026-09-04,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1059,Sneha Das,8120.23,8,user_dropped_at_otp,checkout_abandonment,1,2026-09-02,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1060,Vikram Sharma,8655.64,8,insufficient_funds,subscription_auto_debit,0,2026-08-28,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1061,Rohan Nair,2616.77,7,expired_card,subscription_auto_debit,1,2026-08-30,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1062,Priya Gupta,3834.89,17,expired_card,subscription_auto_debit,1,2026-08-27,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1063,Amit Verma,8830.86,9,expired_card,subscription_auto_debit,0,2026-08-26,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1064,Amit Verma,6166.43,12,expired_card,subscription_auto_debit,2,2026-08-30,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1065,Kriti Mehta,1597.63,19,network_timeout_at_gateway,payment_gateway_degradation,0,2026-08-31,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1066,Vikram Sharma,5438.24,18,insufficient_funds,subscription_auto_debit,2,2026-09-01,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1067,Vikram Verma,9513.31,11,expired_card,subscription_auto_debit,2,2026-08-30,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1068,Rohan Mehta,3437.2,14,insufficient_funds,subscription_auto_debit,1,2026-08-29,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1069,Arjun Patel,2321.48,13,expired_card,subscription_auto_debit,2,2026-09-02,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1070,Kriti Gupta,131215.03,68,b2b_invoice_overdue,b2b_receivables,0,2026-08-31,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1071,Ananya Das,7963.71,20,expired_card,subscription_auto_debit,2,2026-08-30,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1072,Neha Reddy,6917.46,17,network_timeout_at_gateway,payment_gateway_degradation,1,2026-09-02,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1073,Rohan Mehta,6805.61,20,insufficient_funds,subscription_auto_debit,1,2026-09-03,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1074,Rohan Nair,8161.35,5,user_dropped_at_otp,checkout_abandonment,0,2026-09-04,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1075,Neha Singh,8571.51,3,user_dropped_at_otp,checkout_abandonment,1,2026-08-29,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1076,Ananya Das,148875.43,30,b2b_invoice_overdue,b2b_receivables,1,2026-09-04,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1077,Vikram Nair,2169.92,17,insufficient_funds,subscription_auto_debit,1,2026-09-04,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1078,Ananya Verma,141292.37,66,b2b_invoice_overdue,b2b_receivables,3,2026-08-27,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1079,Kriti Joshi,240007.92,72,b2b_invoice_overdue,b2b_receivables,3,2026-08-26,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1080,Vikram Mehta,139182.72,25,b2b_invoice_overdue,b2b_receivables,3,2026-08-28,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1081,Ananya Gupta,7774.23,17,expired_card,subscription_auto_debit,1,2026-09-01,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1082,Neha Verma,7277.68,8,expired_card,subscription_auto_debit,1,2026-08-30,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1083,Arjun Verma,1813.55,8,expired_card,subscription_auto_debit,1,2026-09-02,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1084,Priya Das,4371.19,18,user_dropped_at_otp,checkout_abandonment,1,2026-08-29,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1085,Ananya Das,4199.03,19,insufficient_funds,subscription_auto_debit,2,2026-09-04,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1086,Vikram Reddy,51179.22,37,b2b_invoice_overdue,b2b_receivables,2,2026-08-29,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1087,Arjun Mehta,8097.75,8,network_timeout_at_gateway,payment_gateway_degradation,1,2026-09-01,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1088,Vikram Reddy,774.74,11,expired_card,subscription_auto_debit,2,2026-08-29,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1089,Neha Patel,9815.86,18,user_dropped_at_otp,checkout_abandonment,0,2026-08-29,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1090,Kriti Sharma,66789.49,42,b2b_invoice_overdue,b2b_receivables,1,2026-08-28,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1091,Amit Gupta,4100.49,7,user_dropped_at_otp,checkout_abandonment,1,2026-08-30,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1092,Vikram Gupta,7643.09,14,expired_card,subscription_auto_debit,1,2026-09-03,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1093,Amit Mehta,993.81,12,network_timeout_at_gateway,payment_gateway_degradation,0,2026-09-03,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1094,Amit Nair,2392.93,1,insufficient_funds,subscription_auto_debit,2,2026-09-02,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1095,Rahul Reddy,6858.86,19,user_dropped_at_otp,checkout_abandonment,0,2026-08-28,Abandoned during peak server traffic hour.,FALSE
+CUST_RAZOR_1096,Sneha Patel,6254.98,4,expired_card,subscription_auto_debit,0,2026-08-31,Card expiration flag triggered at gateway.,FALSE
+CUST_RAZOR_1097,Kriti Sharma,9323.43,19,insufficient_funds,subscription_auto_debit,2,2026-08-29,User typically pays on the 1st after salary credit.,FALSE
+CUST_RAZOR_1098,Ananya Verma,6123.93,8,network_timeout_at_gateway,payment_gateway_degradation,0,2026-08-31,Bank api returned 504 gateway timeout error.,FALSE
+CUST_RAZOR_1099,Priya Singh,206527.07,37,b2b_invoice_overdue,b2b_receivables,3,2026-08-30,Net-30 payment terms breached by enterprise client.,FALSE
+CUST_RAZOR_1100,Arjun Joshi,619.2,14,insufficient_funds,subscription_auto_debit,1,2026-09-03,User typically pays on the 1st after salary credit.,FALSE
