@@ -1,0 +1,3269 @@
+{
+    "generated_at": "2026-09-05T17:27:07.009527",
+    "batch_metrics": {
+        "total_at_risk": 3509119.8600000017,
+        "total_recovered": 885307.0199999999,
+        "cash_left_at_risk": 2623812.8400000017,
+        "recovery_yield_rate": 25.228748384787274,
+        "compliance_halts": 50,
+        "human_interventions": 16
+    },
+    "customer_results": [
+        {
+            "customer_id": "CUST_RAZOR_1001",
+            "customer_name": "Amit Gupta",
+            "amount_due": 2825.47,
+            "days_overdue": 5,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Amit Gupta, aapke account se ₹2825.47 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Gupta, aapke account se ₹2825.47 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1002",
+            "customer_name": "Priya Singh",
+            "amount_due": 134384.36,
+            "days_overdue": 16,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 1,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Priya Singh, aapke account se ₹134384.36 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Singh, aapke account se ₹134384.36 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1003",
+            "customer_name": "Arjun Singh",
+            "amount_due": 751.09,
+            "days_overdue": 7,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Arjun Singh, aapka ₹751.09 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Arjun Singh, aapka ₹751.09 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1004",
+            "customer_name": "Ananya Reddy",
+            "amount_due": 6097.02,
+            "days_overdue": 1,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Ananya Reddy, aapke account se ₹6097.02 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Reddy, aapke account se ₹6097.02 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Reddy, aapke account se ₹6097.02 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Reddy, aapke account se ₹6097.02 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1005",
+            "customer_name": "Rohan Patel",
+            "amount_due": 2544.48,
+            "days_overdue": 11,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Rohan Patel, aapke account se ₹2544.48 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Patel, aapke account se ₹2544.48 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Patel, aapke account se ₹2544.48 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Patel, aapke account se ₹2544.48 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1006",
+            "customer_name": "Priya Joshi",
+            "amount_due": 8550.2,
+            "days_overdue": 20,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Priya Joshi, aapke account se ₹8550.2 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Joshi, aapke account se ₹8550.2 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Joshi, aapke account se ₹8550.2 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1007",
+            "customer_name": "Arjun Verma",
+            "amount_due": 9743.6,
+            "days_overdue": 13,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Arjun Verma, aapke account se ₹9743.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Verma, aapke account se ₹9743.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Verma, aapke account se ₹9743.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Verma, aapke account se ₹9743.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1008",
+            "customer_name": "Kriti Joshi",
+            "amount_due": 5983.85,
+            "days_overdue": 3,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Kriti Joshi, aapke account se ₹5983.85 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Joshi, aapke account se ₹5983.85 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Joshi, aapke account se ₹5983.85 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Joshi, aapke account se ₹5983.85 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1009",
+            "customer_name": "Priya Nair",
+            "amount_due": 8730.59,
+            "days_overdue": 13,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Priya Nair, aapke account se ₹8730.59 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Nair, aapke account se ₹8730.59 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Nair, aapke account se ₹8730.59 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1010",
+            "customer_name": "Rahul Joshi",
+            "amount_due": 3874.07,
+            "days_overdue": 9,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Rahul Joshi, aapke account se ₹3874.07 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rahul Joshi, aapke account se ₹3874.07 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1011",
+            "customer_name": "Rahul Mehta",
+            "amount_due": 195825.36,
+            "days_overdue": 25,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 4,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Rahul Mehta, aapke account se ₹195825.36 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rahul Mehta, aapke account se ₹195825.36 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #4 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1012",
+            "customer_name": "Arjun Nair",
+            "amount_due": 7002.84,
+            "days_overdue": 2,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 1,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Arjun Nair, aapke account se ₹7002.84 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Nair, aapke account se ₹7002.84 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1013",
+            "customer_name": "Vikram Gupta",
+            "amount_due": 1127.79,
+            "days_overdue": 19,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Vikram Gupta, aapke account se ₹1127.79 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Gupta, aapke account se ₹1127.79 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1014",
+            "customer_name": "Neha Das",
+            "amount_due": 8903.49,
+            "days_overdue": 15,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Neha Das, aapka ₹8903.49 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Das, aapka ₹8903.49 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Das, aapka ₹8903.49 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Das, aapka ₹8903.49 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1015",
+            "customer_name": "Ananya Mehta",
+            "amount_due": 5619.28,
+            "days_overdue": 19,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Ananya Mehta, aapka ₹5619.28 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Mehta, aapka ₹5619.28 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Mehta, aapka ₹5619.28 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1016",
+            "customer_name": "Sneha Nair",
+            "amount_due": 9973.59,
+            "days_overdue": 5,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Sneha Nair, aapke account se ₹9973.59 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Sneha Nair, aapke account se ₹9973.59 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1017",
+            "customer_name": "Amit Verma",
+            "amount_due": 1950.99,
+            "days_overdue": 6,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Amit Verma, aapke account se ₹1950.99 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Verma, aapke account se ₹1950.99 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1018",
+            "customer_name": "Priya Das",
+            "amount_due": 126323.86,
+            "days_overdue": 44,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 3,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Priya Das, aapke account se ₹126323.86 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Das, aapke account se ₹126323.86 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1019",
+            "customer_name": "Priya Mehta",
+            "amount_due": 7632.34,
+            "days_overdue": 11,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Priya Mehta, aapke account se ₹7632.34 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Mehta, aapke account se ₹7632.34 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Mehta, aapke account se ₹7632.34 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Mehta, aapke account se ₹7632.34 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1020",
+            "customer_name": "Rahul Reddy",
+            "amount_due": 529.83,
+            "days_overdue": 9,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Rahul Reddy, aapke account se ₹529.83 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rahul Reddy, aapke account se ₹529.83 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1021",
+            "customer_name": "Priya Gupta",
+            "amount_due": 218333.87,
+            "days_overdue": 47,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 2,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Priya Gupta, aapke account se ₹218333.87 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Gupta, aapke account se ₹218333.87 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1022",
+            "customer_name": "Rahul Mehta",
+            "amount_due": 9557.25,
+            "days_overdue": 17,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 1,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Rahul Mehta, aapke account se ₹9557.25 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rahul Mehta, aapke account se ₹9557.25 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1023",
+            "customer_name": "Neha Sharma",
+            "amount_due": 1561.74,
+            "days_overdue": 12,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Neha Sharma, aapke account se ₹1561.74 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Sharma, aapke account se ₹1561.74 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1024",
+            "customer_name": "Ananya Singh",
+            "amount_due": 9495.02,
+            "days_overdue": 3,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Ananya Singh, aapke account se ₹9495.02 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Singh, aapke account se ₹9495.02 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1025",
+            "customer_name": "Arjun Patel",
+            "amount_due": 1718.72,
+            "days_overdue": 16,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Arjun Patel, aapke account se ₹1718.72 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Patel, aapke account se ₹1718.72 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1026",
+            "customer_name": "Arjun Singh",
+            "amount_due": 4518.81,
+            "days_overdue": 7,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Arjun Singh, aapke account se ₹4518.81 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Singh, aapke account se ₹4518.81 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1027",
+            "customer_name": "Vikram Joshi",
+            "amount_due": 4660.95,
+            "days_overdue": 17,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Vikram Joshi, aapke account se ₹4660.95 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Joshi, aapke account se ₹4660.95 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Joshi, aapke account se ₹4660.95 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1028",
+            "customer_name": "Ananya Verma",
+            "amount_due": 3710.81,
+            "days_overdue": 19,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Ananya Verma, aapka ₹3710.81 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Verma, aapka ₹3710.81 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1029",
+            "customer_name": "Ananya Sharma",
+            "amount_due": 64198.62,
+            "days_overdue": 55,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 1,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Ananya Sharma, aapke account se ₹64198.62 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Sharma, aapke account se ₹64198.62 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1030",
+            "customer_name": "Amit Joshi",
+            "amount_due": 1172.14,
+            "days_overdue": 8,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Amit Joshi, aapke account se ₹1172.14 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Joshi, aapke account se ₹1172.14 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1031",
+            "customer_name": "Arjun Patel",
+            "amount_due": 7370.85,
+            "days_overdue": 19,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Arjun Patel, aapka ₹7370.85 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Arjun Patel, aapka ₹7370.85 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1032",
+            "customer_name": "Neha Das",
+            "amount_due": 2307.89,
+            "days_overdue": 4,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Neha Das, aapka ₹2307.89 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Das, aapka ₹2307.89 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1033",
+            "customer_name": "Vikram Das",
+            "amount_due": 4935.73,
+            "days_overdue": 2,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Vikram Das, aapke account se ₹4935.73 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Das, aapke account se ₹4935.73 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1034",
+            "customer_name": "Vikram Joshi",
+            "amount_due": 8104.63,
+            "days_overdue": 4,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Vikram Joshi, aapke account se ₹8104.63 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Joshi, aapke account se ₹8104.63 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Joshi, aapke account se ₹8104.63 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Joshi, aapke account se ₹8104.63 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1035",
+            "customer_name": "Arjun Reddy",
+            "amount_due": 1830.73,
+            "days_overdue": 6,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Arjun Reddy, aapka ₹1830.73 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Arjun Reddy, aapka ₹1830.73 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Arjun Reddy, aapka ₹1830.73 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1036",
+            "customer_name": "Priya Reddy",
+            "amount_due": 8175.21,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Priya Reddy, aapka ₹8175.21 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Priya Reddy, aapka ₹8175.21 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Priya Reddy, aapka ₹8175.21 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Priya Reddy, aapka ₹8175.21 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1037",
+            "customer_name": "Amit Verma",
+            "amount_due": 235273.4,
+            "days_overdue": 69,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 2,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Amit Verma, aapke account se ₹235273.4 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Verma, aapke account se ₹235273.4 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1038",
+            "customer_name": "Neha Reddy",
+            "amount_due": 2529.6,
+            "days_overdue": 13,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Neha Reddy, aapke account se ₹2529.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Reddy, aapke account se ₹2529.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Reddy, aapke account se ₹2529.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Reddy, aapke account se ₹2529.6 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1039",
+            "customer_name": "Amit Das",
+            "amount_due": 3018.43,
+            "days_overdue": 15,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Amit Das, aapke account se ₹3018.43 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Das, aapke account se ₹3018.43 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Das, aapke account se ₹3018.43 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1040",
+            "customer_name": "Neha Patel",
+            "amount_due": 87979.57,
+            "days_overdue": 28,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 1,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Neha Patel, aapke account se ₹87979.57 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Patel, aapke account se ₹87979.57 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1041",
+            "customer_name": "Amit Joshi",
+            "amount_due": 61433.05,
+            "days_overdue": 52,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 4,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Amit Joshi, aapke account se ₹61433.05 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Joshi, aapke account se ₹61433.05 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #4 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1042",
+            "customer_name": "Rahul Sharma",
+            "amount_due": 242155.78,
+            "days_overdue": 20,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 2,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Rahul Sharma, aapke account se ₹242155.78 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rahul Sharma, aapke account se ₹242155.78 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1043",
+            "customer_name": "Priya Nair",
+            "amount_due": 130755.11,
+            "days_overdue": 75,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 2,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Priya Nair, aapke account se ₹130755.11 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Nair, aapke account se ₹130755.11 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1044",
+            "customer_name": "Amit Singh",
+            "amount_due": 66396.68,
+            "days_overdue": 57,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 3,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Amit Singh, aapke account se ₹66396.68 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Singh, aapke account se ₹66396.68 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1045",
+            "customer_name": "Sneha Nair",
+            "amount_due": 3022.34,
+            "days_overdue": 5,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Sneha Nair, aapka ₹3022.34 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Sneha Nair, aapka ₹3022.34 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1046",
+            "customer_name": "Sneha Verma",
+            "amount_due": 587.5,
+            "days_overdue": 20,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Sneha Verma, aapke account se ₹587.5 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Sneha Verma, aapke account se ₹587.5 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1047",
+            "customer_name": "Arjun Nair",
+            "amount_due": 5304.9,
+            "days_overdue": 5,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Arjun Nair, aapke account se ₹5304.9 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Nair, aapke account se ₹5304.9 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Nair, aapke account se ₹5304.9 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1048",
+            "customer_name": "Sneha Gupta",
+            "amount_due": 1997.59,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Sneha Gupta, aapka ₹1997.59 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Sneha Gupta, aapka ₹1997.59 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1049",
+            "customer_name": "Arjun Sharma",
+            "amount_due": 183572.64,
+            "days_overdue": 50,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 3,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Arjun Sharma, aapke account se ₹183572.64 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Sharma, aapke account se ₹183572.64 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1050",
+            "customer_name": "Rohan Verma",
+            "amount_due": 8951.27,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 1,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Rohan Verma, aapka ₹8951.27 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rohan Verma, aapka ₹8951.27 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1051",
+            "customer_name": "Kriti Nair",
+            "amount_due": 7316.32,
+            "days_overdue": 7,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Kriti Nair, aapke account se ₹7316.32 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Nair, aapke account se ₹7316.32 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1052",
+            "customer_name": "Neha Gupta",
+            "amount_due": 231067.3,
+            "days_overdue": 69,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 1,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Neha Gupta, aapke account se ₹231067.3 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Gupta, aapke account se ₹231067.3 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1053",
+            "customer_name": "Rohan Sharma",
+            "amount_due": 532.68,
+            "days_overdue": 5,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Rohan Sharma, aapke account se ₹532.68 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Sharma, aapke account se ₹532.68 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1054",
+            "customer_name": "Neha Mehta",
+            "amount_due": 7202.84,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Neha Mehta, aapka ₹7202.84 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Mehta, aapka ₹7202.84 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Mehta, aapka ₹7202.84 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Mehta, aapka ₹7202.84 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1055",
+            "customer_name": "Rahul Mehta",
+            "amount_due": 841.27,
+            "days_overdue": 12,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Rahul Mehta, aapke account se ₹841.27 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rahul Mehta, aapke account se ₹841.27 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1056",
+            "customer_name": "Vikram Patel",
+            "amount_due": 896.37,
+            "days_overdue": 12,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Vikram Patel, aapka ₹896.37 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Vikram Patel, aapka ₹896.37 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Vikram Patel, aapka ₹896.37 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Vikram Patel, aapka ₹896.37 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1057",
+            "customer_name": "Ananya Verma",
+            "amount_due": 3858.95,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Ananya Verma, aapka ₹3858.95 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Verma, aapka ₹3858.95 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Verma, aapka ₹3858.95 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1058",
+            "customer_name": "Ananya Patel",
+            "amount_due": 9772.96,
+            "days_overdue": 6,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Ananya Patel, aapka ₹9772.96 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Patel, aapka ₹9772.96 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Ananya Patel, aapka ₹9772.96 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1059",
+            "customer_name": "Sneha Das",
+            "amount_due": 8120.23,
+            "days_overdue": 8,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Sneha Das, aapka ₹8120.23 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Sneha Das, aapka ₹8120.23 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Sneha Das, aapka ₹8120.23 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1060",
+            "customer_name": "Vikram Sharma",
+            "amount_due": 8655.64,
+            "days_overdue": 8,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 1,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Vikram Sharma, aapke account se ₹8655.64 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Sharma, aapke account se ₹8655.64 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1061",
+            "customer_name": "Rohan Nair",
+            "amount_due": 2616.77,
+            "days_overdue": 7,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Rohan Nair, aapke account se ₹2616.77 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Nair, aapke account se ₹2616.77 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1062",
+            "customer_name": "Priya Gupta",
+            "amount_due": 3834.89,
+            "days_overdue": 17,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Priya Gupta, aapke account se ₹3834.89 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Gupta, aapke account se ₹3834.89 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1063",
+            "customer_name": "Amit Verma",
+            "amount_due": 8830.86,
+            "days_overdue": 9,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 1,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Amit Verma, aapke account se ₹8830.86 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Verma, aapke account se ₹8830.86 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1064",
+            "customer_name": "Amit Verma",
+            "amount_due": 6166.43,
+            "days_overdue": 12,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Amit Verma, aapke account se ₹6166.43 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Verma, aapke account se ₹6166.43 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1065",
+            "customer_name": "Kriti Mehta",
+            "amount_due": 1597.63,
+            "days_overdue": 19,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Kriti Mehta, aapke account se ₹1597.63 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Mehta, aapke account se ₹1597.63 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Mehta, aapke account se ₹1597.63 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Mehta, aapke account se ₹1597.63 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1066",
+            "customer_name": "Vikram Sharma",
+            "amount_due": 5438.24,
+            "days_overdue": 18,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Vikram Sharma, aapke account se ₹5438.24 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Sharma, aapke account se ₹5438.24 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1067",
+            "customer_name": "Vikram Verma",
+            "amount_due": 9513.31,
+            "days_overdue": 11,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Vikram Verma, aapke account se ₹9513.31 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Verma, aapke account se ₹9513.31 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1068",
+            "customer_name": "Rohan Mehta",
+            "amount_due": 3437.2,
+            "days_overdue": 14,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Rohan Mehta, aapke account se ₹3437.2 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Mehta, aapke account se ₹3437.2 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Mehta, aapke account se ₹3437.2 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1069",
+            "customer_name": "Arjun Patel",
+            "amount_due": 2321.48,
+            "days_overdue": 13,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Arjun Patel, aapke account se ₹2321.48 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Patel, aapke account se ₹2321.48 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1070",
+            "customer_name": "Kriti Gupta",
+            "amount_due": 131215.03,
+            "days_overdue": 68,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 1,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Kriti Gupta, aapke account se ₹131215.03 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Gupta, aapke account se ₹131215.03 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1071",
+            "customer_name": "Ananya Das",
+            "amount_due": 7963.71,
+            "days_overdue": 20,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Ananya Das, aapke account se ₹7963.71 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Das, aapke account se ₹7963.71 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1072",
+            "customer_name": "Neha Reddy",
+            "amount_due": 6917.46,
+            "days_overdue": 17,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 2,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Neha Reddy, aapke account se ₹6917.46 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Reddy, aapke account se ₹6917.46 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1073",
+            "customer_name": "Rohan Mehta",
+            "amount_due": 6805.61,
+            "days_overdue": 20,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Rohan Mehta, aapke account se ₹6805.61 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Rohan Mehta, aapke account se ₹6805.61 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1074",
+            "customer_name": "Rohan Nair",
+            "amount_due": 8161.35,
+            "days_overdue": 5,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Rohan Nair, aapka ₹8161.35 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rohan Nair, aapka ₹8161.35 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rohan Nair, aapka ₹8161.35 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rohan Nair, aapka ₹8161.35 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1075",
+            "customer_name": "Neha Singh",
+            "amount_due": 8571.51,
+            "days_overdue": 3,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Neha Singh, aapka ₹8571.51 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Singh, aapka ₹8571.51 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Singh, aapka ₹8571.51 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1076",
+            "customer_name": "Ananya Das",
+            "amount_due": 148875.43,
+            "days_overdue": 30,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 2,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Ananya Das, aapke account se ₹148875.43 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Das, aapke account se ₹148875.43 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1077",
+            "customer_name": "Vikram Nair",
+            "amount_due": 2169.92,
+            "days_overdue": 17,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Vikram Nair, aapke account se ₹2169.92 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Nair, aapke account se ₹2169.92 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Nair, aapke account se ₹2169.92 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1078",
+            "customer_name": "Ananya Verma",
+            "amount_due": 141292.37,
+            "days_overdue": 66,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 4,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Ananya Verma, aapke account se ₹141292.37 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Verma, aapke account se ₹141292.37 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #4 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1079",
+            "customer_name": "Kriti Joshi",
+            "amount_due": 240007.92,
+            "days_overdue": 72,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 4,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Kriti Joshi, aapke account se ₹240007.92 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Joshi, aapke account se ₹240007.92 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #4 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1080",
+            "customer_name": "Vikram Mehta",
+            "amount_due": 139182.72,
+            "days_overdue": 25,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 4,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Vikram Mehta, aapke account se ₹139182.72 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Mehta, aapke account se ₹139182.72 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #4 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1081",
+            "customer_name": "Ananya Gupta",
+            "amount_due": 7774.23,
+            "days_overdue": 17,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Ananya Gupta, aapke account se ₹7774.23 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Gupta, aapke account se ₹7774.23 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1082",
+            "customer_name": "Neha Verma",
+            "amount_due": 7277.68,
+            "days_overdue": 8,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Neha Verma, aapke account se ₹7277.68 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Neha Verma, aapke account se ₹7277.68 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1083",
+            "customer_name": "Arjun Verma",
+            "amount_due": 1813.55,
+            "days_overdue": 8,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Arjun Verma, aapke account se ₹1813.55 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Verma, aapke account se ₹1813.55 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1084",
+            "customer_name": "Priya Das",
+            "amount_due": 4371.19,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Priya Das, aapka ₹4371.19 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Priya Das, aapka ₹4371.19 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Priya Das, aapka ₹4371.19 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1085",
+            "customer_name": "Ananya Das",
+            "amount_due": 4199.03,
+            "days_overdue": 19,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Ananya Das, aapke account se ₹4199.03 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Das, aapke account se ₹4199.03 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1086",
+            "customer_name": "Vikram Reddy",
+            "amount_due": 51179.22,
+            "days_overdue": 37,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 3,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Vikram Reddy, aapke account se ₹51179.22 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Reddy, aapke account se ₹51179.22 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1087",
+            "customer_name": "Arjun Mehta",
+            "amount_due": 8097.75,
+            "days_overdue": 8,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Arjun Mehta, aapke account se ₹8097.75 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Mehta, aapke account se ₹8097.75 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Mehta, aapke account se ₹8097.75 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1088",
+            "customer_name": "Vikram Reddy",
+            "amount_due": 774.74,
+            "days_overdue": 11,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Vikram Reddy, aapke account se ₹774.74 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Reddy, aapke account se ₹774.74 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1089",
+            "customer_name": "Neha Patel",
+            "amount_due": 9815.86,
+            "days_overdue": 18,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Neha Patel, aapka ₹9815.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Patel, aapka ₹9815.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Patel, aapka ₹9815.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Neha Patel, aapka ₹9815.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1090",
+            "customer_name": "Kriti Sharma",
+            "amount_due": 66789.49,
+            "days_overdue": 42,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 2,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Kriti Sharma, aapke account se ₹66789.49 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Sharma, aapke account se ₹66789.49 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1091",
+            "customer_name": "Amit Gupta",
+            "amount_due": 4100.49,
+            "days_overdue": 7,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 2,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Amit Gupta, aapka ₹4100.49 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Amit Gupta, aapka ₹4100.49 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1092",
+            "customer_name": "Vikram Gupta",
+            "amount_due": 7643.09,
+            "days_overdue": 14,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Vikram Gupta, aapke account se ₹7643.09 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Vikram Gupta, aapke account se ₹7643.09 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1093",
+            "customer_name": "Amit Mehta",
+            "amount_due": 993.81,
+            "days_overdue": 12,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 1,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Amit Mehta, aapke account se ₹993.81 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Mehta, aapke account se ₹993.81 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1094",
+            "customer_name": "Amit Nair",
+            "amount_due": 2392.93,
+            "days_overdue": 1,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Amit Nair, aapke account se ₹2392.93 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Amit Nair, aapke account se ₹2392.93 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1095",
+            "customer_name": "Rahul Reddy",
+            "amount_due": 6858.86,
+            "days_overdue": 19,
+            "failure_reason": "user_dropped_at_otp",
+            "payment_channel": "checkout_abandonment",
+            "outreach_count": 3,
+            "historical_context": "Abandoned during peak server traffic hour.",
+            "current_strategy": "Hi Rahul Reddy, aapka ₹6858.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'user_dropped_at_otp' for channel 'checkout_abandonment'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rahul Reddy, aapka ₹6858.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rahul Reddy, aapka ₹6858.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hi Rahul Reddy, aapka ₹6858.86 ka payment checkout OTP page par drop ho gaya tha. Aap is safe link par click karke direct secure check-out complete kar sakte hain.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1096",
+            "customer_name": "Sneha Patel",
+            "amount_due": 6254.98,
+            "days_overdue": 4,
+            "failure_reason": "expired_card",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "Card expiration flag triggered at gateway.",
+            "current_strategy": "Hello Sneha Patel, aapke account se ₹6254.98 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'expired_card' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Sneha Patel, aapke account se ₹6254.98 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Sneha Patel, aapke account se ₹6254.98 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Sneha Patel, aapke account se ₹6254.98 ka mandate process nahi ho paya due to expired_card. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1097",
+            "customer_name": "Kriti Sharma",
+            "amount_due": 9323.43,
+            "days_overdue": 19,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 3,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Kriti Sharma, aapke account se ₹9323.43 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Kriti Sharma, aapke account se ₹9323.43 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1098",
+            "customer_name": "Ananya Verma",
+            "amount_due": 6123.93,
+            "days_overdue": 8,
+            "failure_reason": "network_timeout_at_gateway",
+            "payment_channel": "payment_gateway_degradation",
+            "outreach_count": 3,
+            "historical_context": "Bank api returned 504 gateway timeout error.",
+            "current_strategy": "Hello Ananya Verma, aapke account se ₹6123.93 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.",
+            "status": "STOPPED_COMPLIANCE",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'network_timeout_at_gateway' for channel 'payment_gateway_degradation'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Verma, aapke account se ₹6123.93 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #1 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Verma, aapke account se ₹6123.93 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #2 failed to clear balance."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Ananya Verma, aapke account se ₹6123.93 ka mandate process nahi ho paya due to network_timeout_at_gateway. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #3 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "SAFETY STOP: Bounded execution threshold reached (Max 3 attempts). Silencing automation to prevent harassment."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1099",
+            "customer_name": "Priya Singh",
+            "amount_due": 206527.07,
+            "days_overdue": 37,
+            "failure_reason": "b2b_invoice_overdue",
+            "payment_channel": "b2b_receivables",
+            "outreach_count": 4,
+            "historical_context": "Net-30 payment terms breached by enterprise client.",
+            "current_strategy": "Hello Priya Singh, aapke account se ₹206527.07 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.",
+            "status": "ESCALATED_HUMAN",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'b2b_invoice_overdue' for channel 'b2b_receivables'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Priya Singh, aapke account se ₹206527.07 ka mandate process nahi ho paya due to b2b_invoice_overdue. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "Deployed outreach campaign. Attempt #4 failed to clear balance."
+                },
+                {
+                    "node": "ComplianceGuardrail",
+                    "action": "CRITICAL: Transferred to Human Collections Panel. Debt age/amount breached automation boundaries."
+                }
+            ]
+        },
+        {
+            "customer_id": "CUST_RAZOR_1100",
+            "customer_name": "Arjun Joshi",
+            "amount_due": 619.2,
+            "days_overdue": 14,
+            "failure_reason": "insufficient_funds",
+            "payment_channel": "subscription_auto_debit",
+            "outreach_count": 2,
+            "historical_context": "User typically pays on the 1st after salary credit.",
+            "current_strategy": "Hello Arjun Joshi, aapke account se ₹619.2 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.",
+            "status": "RECOVERED",
+            "audit_trail": [
+                {
+                    "node": "DiagnosisAgent",
+                    "action": "Verified issue 'insufficient_funds' for channel 'subscription_auto_debit'."
+                },
+                {
+                    "node": "StrategistAgent",
+                    "action": "LLM Generated Hinglish Alert: \"Hello Arjun Joshi, aapke account se ₹619.2 ka mandate process nahi ho paya due to insufficient_funds. Please details update kijiye.\""
+                },
+                {
+                    "node": "ExecutionAgent",
+                    "action": "SUCCESS! Payment clear via active recovery engine workflow allocation."
+                }
+            ]
+        }
+    ]
+}
